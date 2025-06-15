@@ -75,7 +75,7 @@ src/
 ```
 # Steps to run:
 ```
-git clone 
+git clone https://github.com/Kish202/Habot-taskautomation.git
 cd task-automation-dashboard
 ```
 ```
