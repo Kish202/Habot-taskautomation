@@ -2,6 +2,8 @@
 
  Modern, responsive web application built with React for managing and monitoring automated tasks. The dashboard allows users to view, create, edit, and run tasks, visualize task statuses, view logs, and download logs as PDFs. It features a light/dark theme toggle and persists user-created and edited tasks in `localStorage`.
 
+https://taskautomation-xi.vercel.app/
+
 ## Features
 
 - **Task Management**:
@@ -24,23 +26,21 @@
   - Toggle between light and dark themes with a button, using Tailwind CSS for styling.
   - Persistent theme preference via `ThemeContext`.
 
+
 - **Responsive Design**:
   - Grid-based layout for task and stats cards, adapting to mobile, tablet, and desktop screens.
   - Smooth transitions and hover effects for enhanced user experience.
 
-- **Data Persistence**:
-  - Merge default tasks (hardcoded in `TaskService.js`) with user-created/edited tasks in `localStorage`.
-  - Prioritize `localStorage` tasks to override default tasks with the same `id`.
 
 ## Tech Stack
 
 ### Libraries and Frameworks
-- **React**: ^18.2.0 (Frontend framework for building the UI)
-- **Vite**: ^5.0.0 (Build tool and development server)
-- **Tailwind CSS**: ^3.4.1 (Utility-first CSS framework for styling)
+- **React**:   (Frontend framework for building the UI)
+- **Vite**:  (Build tool and development server)
+- **Tailwind CSS**: (Utility-first CSS framework for styling)
 - **shadcn/ui**: (UI components like `Button`, `Card`, `Dialog`, customized with Tailwind)
-- **lucide-react**: ^0.446.0 (Icon library for task-specific icons like `Database`, `Mail`)
-- **jspdf**: ^2.5.1 (Client-side PDF generation for log downloads)
+- **lucide-react**:  (Icon library for task-specific icons like `Database`, `Mail`)
+- **jspdf**:  (Client-side PDF generation for log downloads)
 
 ### Utilities
 - **localStorage**: For persisting user-created and edited tasks.
@@ -54,29 +54,29 @@
 src/
 ├── components/
 │   └── dashboard/
-│       ├── Dashboard.js          # Main dashboard component
-│       ├── TaskCard.js           # Task card with run, logs, and edit buttons
-│       ├── ViewLogsModal.js      # Modal for viewing and downloading logs
-│       ├── NewTaskModal.js       # Modal for creating/editing tasks
-│       ├── StatsCard.js          # Card for task status summaries
-│       └── StatusBadge.js        # Badge for task status visualization
+│       ├── Dashboard.jsx          # Main dashboard component
+│       ├── TaskCard.jsx           # Task card with run, logs, and edit buttons
+│       ├──  ViewLogsModal.jsx      # Modal for viewing and downloading logs
+│       ├── NewTaskModal.jsx       # Modal for creating/editing tasks
+│       ├── StatsCard.jsx          # Card for task status summaries
+│       └── StatusBadge.jsx        # Badge for task status visualization
 ├── contexts/
-│   ├── TaskContext.js            # Context for task data and operations
-│   └── ThemeContext.js           # Context for theme toggling
+│   ├── TaskContext.jsx            # Context for task data and operations
+│   └── ThemeContext.jsx           # Context for theme toggling
 ├── services/
-│   └── TaskService.js            # Task data management (fetch, create, update)
+│   └── TaskService.jsx            # Task data management (fetch, create, update)
 ├── utils/
 │   ├── delay.js                  # Simulated API delay utility
 │   └── storage.js                # localStorage utility
-├── App.js                        # Root component
+├── App.jsx                        # Root component
 ├── index.css                     # Tailwind CSS imports
-└── main.js                       # Entry point
+
 
 ```
 # Steps to run:
 ```
 git clone https://github.com/Kish202/Habot-taskautomation.git
-cd task-automation-dashboard
+cd frontend
 ```
 ```
 npm install
